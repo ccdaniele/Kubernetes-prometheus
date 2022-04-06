@@ -1,0 +1,5 @@
+ad_identifiers:
+  - _docker
+init_config:
+instances:
+  -

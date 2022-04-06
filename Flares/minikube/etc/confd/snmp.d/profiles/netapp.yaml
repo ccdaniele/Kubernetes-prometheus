@@ -1,0 +1,143 @@
+extends:
+  - _base.yaml
+device:
+  vendor: "netapp"
+sysobjectid: 1.3.6.1.4.1.789.2.*
+metadata:
+  device:
+    fields:
+      vendor:
+        value: "netapp"
+      serial_number:
+        symbol:
+          MIB: NETAPP-MIB
+          OID: 1.3.6.1.4.1.789.1.1.9.0
+          name: productSerialNum  # The product serial number. Returns unknown if it cannot be determined.
+      version:
+        symbol:
+          OID: 1.3.6.1.2.1.1.1.0
+          name: sysDescr
+          match_pattern: 'NetApp Release\s+(\S+)[:\s]'
+          match_value: '$1'
+      model:
+        symbol:
+          MIB: NETAPP-MIB
+          OID: 1.3.6.1.4.1.789.1.1.5.0
+          name: productModel  # The model name of the system. Examples are FAS980 and FAS3050.
+      os_name:
+        value: 'ONTAP'
+      os_version:
+        symbol:
+          OID: 1.3.6.1.2.1.1.1.0
+          name: sysDescr
+          match_pattern: 'NetApp Release\s+(\d+(?:\.\d+)*)'  # First part of the version composed of digits and `.`
+          match_value: '$1'
+metrics:
+  - MIB: NETAPP-MIB
+    OID: 1.3.6.1.4.1.789.1.2.3.8.0
+    name: cfInterconnectStatus  # The current status of the interconnect. The partialFailure(3) status indicates that
+  - MIB: NETAPP-MIB
+    OID: 1.3.6.1.4.1.789.1.2.2.23.0
+    name: miscCacheAge  # Age in minutes of the oldest read-only blocks in the buffer cache.
+  - MIB: NETAPP-MIB
+    OID: 1.3.6.1.4.1.789.1.8.3.6.36.0
+    name: ncHttpActiveCliConns  # Number of currently active TCP/IP connections to HTTP clients
+  - MIB: NETAPP-MIB
+    OID: 1.3.6.1.4.1.789.1.26.8.0
+    name: extcache64Hits  # Indicates number of wafl buffers read from the external cache
+    forced_type: monotonic_count
+  - MIB: NETAPP-MIB
+    table:
+      OID: 1.3.6.1.4.1.789.1.19.11
+      name: snapvaultStatusTable
+    symbols:
+      - OID: 1.3.6.1.4.1.789.1.19.11.1.9
+        name: svTotalFailures
+    forced_type: monotonic_count
+    metric_tags:
+      - tag: index
+        column:
+          OID: 1.3.6.1.4.1.789.1.19.11.1.1
+          name: svIndex
+      - tag: destination
+        column:
+          OID: 1.3.6.1.4.1.789.1.19.11.1.3
+          name: svDst
+      - tag: state
+        column:
+          OID: 1.3.6.1.4.1.789.1.19.11.1.5
+          name: svState
+  - MIB: NETAPP-MIB
+    table:
+      OID: 1.3.6.1.4.1.789.1.9.20
+      name: snapmirrorStatusTable
+    forced_type: gauge
+    symbols:
+      - OID: 1.3.6.1.4.1.789.1.9.20.1.6
+        name: snapmirrorLag # SNMP type is TimeTicks
+    metric_tags:
+      - tag: index
+        column:
+          OID: 1.3.6.1.4.1.789.1.9.20.1.1
+          name: snapmirrorIndex
+      - tag: state
+        column:
+          OID: 1.3.6.1.4.1.789.1.9.20.1.5
+          name: snapmirrorState
+  - MIB: NETAPP-MIB
+    table:
+      OID: 1.3.6.1.4.1.789.1.9.20
+      name: snapmirrorStatusTable
+    forced_type: monotonic_count
+    symbols:
+      - OID: 1.3.6.1.4.1.789.1.9.20.1.9
+        name: snapmirrorTotalFailures
+    metric_tags:
+      - tag: index
+        column:
+          OID: 1.3.6.1.4.1.789.1.9.20.1.1
+          name: snapmirrorIndex
+      - tag: state
+        column:
+          OID: 1.3.6.1.4.1.789.1.9.20.1.5
+          name: snapmirrorState
+  - MIB: NETAPP-MIB
+    table:
+      OID: 1.3.6.1.4.1.789.1.5.4
+      name: dfTable
+    forced_type: gauge
+    symbols:
+      - OID: 1.3.6.1.4.1.789.1.5.4.1.14
+        name: dfHighTotalKBytes
+      - OID: 1.3.6.1.4.1.789.1.5.4.1.18
+        name: dfHighAvailKBytes
+      - OID: 1.3.6.1.4.1.789.1.5.4.1.7
+        name: dfInodesUsed
+      - OID: 1.3.6.1.4.1.789.1.5.4.1.8
+        name: dfInodesFree
+    metric_tags:
+      - tag: index
+        column:
+          OID: 1.3.6.1.4.1.789.1.5.4.1.1
+          name: dfIndex
+      - tag: filesystem
+        column:
+          OID: 1.3.6.1.4.1.789.1.5.4.1.2
+          name: dfFileSys
+  - MIB: NETAPP-MIB
+    table:
+      OID: 1.3.6.1.4.1.789.1.22.1.2
+      name: netifTable
+    forced_type: monotonic_count_and_rate
+    symbols:
+      - OID: 1.3.6.1.4.1.789.1.22.1.2.1.3
+        name: ifHighInOctets
+    metric_tags:
+      - tag: index
+        column:
+          OID: 1.3.6.1.4.1.789.1.22.1.2.1.1
+          name: netifIndex
+      - tag: interface
+        column:
+          OID: 1.3.6.1.4.1.789.1.22.1.2.1.2
+          name: netifDescr

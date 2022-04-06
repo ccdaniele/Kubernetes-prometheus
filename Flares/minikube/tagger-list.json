@@ -1,0 +1,922 @@
+{
+	"entities": {
+		"container_id://00a6a8896df1d3ea36585fea17bd711b6f92921151459e007062abf1fb30cf97": {
+			"tags": {
+				"workloadmeta-container": [
+					"short_image:kube-controller-manager",
+					"image_tag:v1.23.3",
+					"docker_image:k8s.gcr.io/kube-controller-manager:v1.23.3",
+					"image_name:k8s.gcr.io/kube-controller-manager",
+					"container_name:k8s_kube-controller-manager_kube-controller-manager-minikube_kube-system_b965983ec05322d0973594a01d5e8245_1",
+					"container_id:00a6a8896df1d3ea36585fea17bd711b6f92921151459e007062abf1fb30cf97"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"image_tag:v1.23.3",
+					"image_id:********@sha256:b721871d9a9c55836cbcbb2bf375e02696260628f73620b267be9a9a50c97f5a",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"kube_container_name:kube-controller-manager",
+					"image_name:k8s.gcr.io/kube-controller-manager",
+					"short_image:kube-controller-manager",
+					"pod_name:kube-controller-manager-minikube",
+					"container_id:00a6a8896df1d3ea36585fea17bd711b6f92921151459e007062abf1fb30cf97",
+					"display_container_name:k8s_kube-controller-manager_kube-controller-manager-minikube_kube-system_b965983ec05322d0973594a01d5e8245_1_kube-controller-manager-minikube"
+				]
+			}
+		},
+		"container_id://0c22cb04a10f56cc6da5452f29ec71d9d93bbb8fbf6e168a2ac21811cdbe12ef": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"container_name:k8s_POD_etcd-minikube_kube-system_9d3d310935e5fabe942511eec3e2cd0c_1",
+					"container_id:0c22cb04a10f56cc6da5452f29ec71d9d93bbb8fbf6e168a2ac21811cdbe12ef"
+				]
+			}
+		},
+		"container_id://13157e446bec6cde9e6ae4aaa02820ff44a4c858008821d9c0188899d6d3e248": {
+			"tags": {
+				"workloadmeta-container": [
+					"short_image:pause",
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"image_name:k8s.gcr.io/pause",
+					"container_name:k8s_POD_redis_default_2be40fbc-0cb5-440b-bd3a-6e19031c7441_0",
+					"container_id:13157e446bec6cde9e6ae4aaa02820ff44a4c858008821d9c0188899d6d3e248"
+				]
+			}
+		},
+		"container_id://1f8c8a343bf450094919248061e7080239508221d282a55faa63c28cfefa6e82": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"container_name:k8s_POD_release-kube-state-metrics-c4787c9c4-pdk76_default_2e18de2a-1945-4bc9-8c5b-8f85ce573092_1",
+					"container_id:1f8c8a343bf450094919248061e7080239508221d282a55faa63c28cfefa6e82"
+				]
+			}
+		},
+		"container_id://2356b6eab490855031fd6e987d021f9bbe2c60d5e13f910f4028de30c7d125c4": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:gcr.io/datadoghq/agent",
+					"short_image:agent",
+					"image_tag:7.34.0",
+					"docker_image:gcr.io/datadoghq/agent:7.34.0",
+					"container_name:init-config",
+					"container_id:2356b6eab490855031fd6e987d021f9bbe2c60d5e13f910f4028de30c7d125c4"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_app_component:agent",
+					"kube_daemon_set:release-datadog",
+					"kube_service:release-datadog",
+					"image_id:********@sha256:2ef4ef739b3809872bc8bb959b19c0fc665d239cae306c7adec95e63deb4ab3c",
+					"kube_namespace:default",
+					"kube_container_name:init-config",
+					"image_name:gcr.io/datadoghq/agent",
+					"image_tag:7.34.0",
+					"kube_ownerref_kind:daemonset",
+					"kube_app_instance:release",
+					"kube_app_name:release-datadog",
+					"kube_app_managed_by:Helm",
+					"short_image:agent",
+					"pod_phase:running",
+					"pod_name:release-datadog-jsw4z",
+					"kube_ownerref_name:release-datadog",
+					"container_id:2356b6eab490855031fd6e987d021f9bbe2c60d5e13f910f4028de30c7d125c4",
+					"display_container_name:init-config_release-datadog-jsw4z"
+				]
+			}
+		},
+		"container_id://2498861c9fdf2f0096afc4b1954edee5e9f84c113b67b64d3fe54fa4e1efe884": {
+			"tags": {
+				"workloadmeta-container": [
+					"short_image:pause",
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"image_name:k8s.gcr.io/pause",
+					"container_name:k8s_POD_release-datadog-cluster-agent-564cdc4768-hbnls_default_e19a97b2-da2f-48aa-a2e0-3fbd61ef18b7_0",
+					"container_id:2498861c9fdf2f0096afc4b1954edee5e9f84c113b67b64d3fe54fa4e1efe884"
+				]
+			}
+		},
+		"container_id://2afe74e5baa1bffa30884fd854efd1a635a595717d7eeea42933248ff9212bd4": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"container_id:2afe74e5baa1bffa30884fd854efd1a635a595717d7eeea42933248ff9212bd4",
+					"container_name:k8s_POD_storage-provisioner_kube-system_16b52cb6-949a-4a39-af1a-2317e226f344_1"
+				]
+			}
+		},
+		"container_id://304689adc9fef9b88fe87ee341311f8d24b549fa0fbf09be8c52394c93102213": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:bitnami/apache-exporter",
+					"short_image:apache-exporter",
+					"image_tag:latest",
+					"docker_image:bitnami/apache-exporter:latest",
+					"container_name:apache",
+					"container_id:304689adc9fef9b88fe87ee341311f8d24b549fa0fbf09be8c52394c93102213"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"short_image:apache-exporter",
+					"image_tag:latest",
+					"image_id:********@sha256:98099a0ca4fdb0cc5810057eb08c439e84372140b7f761172a2f71bfedb20e65",
+					"kube_namespace:default",
+					"pod_phase:running",
+					"kube_container_name:apache",
+					"image_name:bitnami/apache-exporter",
+					"pod_name:apache",
+					"container_id:304689adc9fef9b88fe87ee341311f8d24b549fa0fbf09be8c52394c93102213",
+					"display_container_name:k8s_apache_apache_default_5a649e7b-53bb-4561-9a3e-4b9418b2ac4c_0_apache"
+				]
+			}
+		},
+		"container_id://31ba1325a96642969e21e8e5d2ad6d64640704c346bc977b932b7833ff832a12": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"container_name:k8s_POD_apache_default_0511832d-66df-4ee8-b850-b74a4a0db16f_0",
+					"container_id:31ba1325a96642969e21e8e5d2ad6d64640704c346bc977b932b7833ff832a12"
+				]
+			}
+		},
+		"container_id://348ef4e8c960363570d2218515459303b1cc98aacb9c1a47dd99160ae638171f": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:gcr.io/k8s-minikube/storage-provisioner",
+					"short_image:storage-provisioner",
+					"image_tag:v5",
+					"docker_image:gcr.io/k8s-minikube/storage-provisioner:v5",
+					"container_name:k8s_storage-provisioner_storage-provisioner_kube-system_16b52cb6-949a-4a39-af1a-2317e226f344_8",
+					"container_id:348ef4e8c960363570d2218515459303b1cc98aacb9c1a47dd99160ae638171f"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"short_image:storage-provisioner",
+					"image_tag:v5",
+					"image_id:********@sha256:18eb69d1418e854ad5a19e399310e52808a8321e4c441c1dddad8977a0d7a944",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_container_name:storage-provisioner",
+					"image_name:gcr.io/k8s-minikube/storage-provisioner",
+					"pod_name:storage-provisioner",
+					"container_id:348ef4e8c960363570d2218515459303b1cc98aacb9c1a47dd99160ae638171f",
+					"display_container_name:k8s_storage-provisioner_storage-provisioner_kube-system_16b52cb6-949a-4a39-af1a-2317e226f344_8_storage-provisioner"
+				]
+			}
+		},
+		"container_id://36cc3715e726c8d09110eda04d48aed39fe8b346279c081826ec38c7c227e986": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:gcr.io/datadoghq/agent",
+					"short_image:agent",
+					"image_tag:7.34.0",
+					"docker_image:gcr.io/datadoghq/agent:7.34.0",
+					"container_name:init-volume",
+					"container_id:36cc3715e726c8d09110eda04d48aed39fe8b346279c081826ec38c7c227e986"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"image_tag:7.34.0",
+					"kube_service:release-datadog",
+					"image_name:gcr.io/datadoghq/agent",
+					"kube_namespace:default",
+					"image_id:********@sha256:2ef4ef739b3809872bc8bb959b19c0fc665d239cae306c7adec95e63deb4ab3c",
+					"kube_daemon_set:release-datadog",
+					"kube_app_component:agent",
+					"pod_phase:running",
+					"kube_app_instance:release",
+					"kube_app_managed_by:Helm",
+					"kube_container_name:init-volume",
+					"short_image:agent",
+					"kube_app_name:release-datadog",
+					"kube_ownerref_kind:daemonset",
+					"kube_ownerref_name:release-datadog",
+					"pod_name:release-datadog-jsw4z",
+					"container_id:36cc3715e726c8d09110eda04d48aed39fe8b346279c081826ec38c7c227e986",
+					"display_container_name:init-volume_release-datadog-jsw4z"
+				]
+			}
+		},
+		"container_id://39e2aed00486eb4ca13b9c2657adf9fff3134e8317ff930e3b33f7d0f606955f": {
+			"tags": {
+				"workloadmeta-container": [
+					"docker_image:prom/prometheus:latest",
+					"image_name:prom/prometheus",
+					"short_image:prometheus",
+					"image_tag:latest",
+					"container_name:k8s_prometheus-apache_prometheus-apache_default_d5efcf8b-f09b-4d20-a092-991c0084324a_0",
+					"container_id:39e2aed00486eb4ca13b9c2657adf9fff3134e8317ff930e3b33f7d0f606955f"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_container_name:prometheus-apache",
+					"image_name:prom/prometheus",
+					"short_image:prometheus",
+					"image_tag:latest",
+					"image_id:********@sha256:b37103e03399e90c9b7b1b2940894d3634915cf9df4aa2e5402bd85b4377808c",
+					"kube_namespace:default",
+					"pod_phase:running",
+					"pod_name:prometheus-apache",
+					"container_id:39e2aed00486eb4ca13b9c2657adf9fff3134e8317ff930e3b33f7d0f606955f",
+					"display_container_name:k8s_prometheus-apache_prometheus-apache_default_d5efcf8b-f09b-4d20-a092-991c0084324a_0_prometheus-apache"
+				]
+			}
+		},
+		"container_id://3c2bb31b1202192409b94d9ef92a734eb502002accbe0974fb965965ea720a73": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"container_name:k8s_POD_coredns-64897985d-jf8f5_kube-system_b2102ee9-3149-43d8-a3ba-18ff36b70027_1",
+					"container_id:3c2bb31b1202192409b94d9ef92a734eb502002accbe0974fb965965ea720a73"
+				]
+			}
+		},
+		"container_id://451d0c91b0bcfccff217582724dc0adf027ce9f20d03aed973eda100c4d944e1": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_tag:7.34.0",
+					"docker_image:gcr.io/datadoghq/agent:7.34.0",
+					"image_name:gcr.io/datadoghq/agent",
+					"short_image:agent",
+					"container_name:k8s_trace-agent_release-datadog-jsw4z_default_caee2b10-3d11-4f8a-9da6-f4765702d91f_0",
+					"container_id:451d0c91b0bcfccff217582724dc0adf027ce9f20d03aed973eda100c4d944e1"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_app_instance:release",
+					"kube_app_name:release-datadog",
+					"kube_daemon_set:release-datadog",
+					"kube_app_managed_by:Helm",
+					"kube_app_component:agent",
+					"kube_ownerref_kind:daemonset",
+					"kube_container_name:trace-agent",
+					"image_name:gcr.io/datadoghq/agent",
+					"short_image:agent",
+					"kube_namespace:default",
+					"kube_service:release-datadog",
+					"pod_phase:running",
+					"image_tag:7.34.0",
+					"image_id:********@sha256:2ef4ef739b3809872bc8bb959b19c0fc665d239cae306c7adec95e63deb4ab3c",
+					"pod_name:release-datadog-jsw4z",
+					"kube_ownerref_name:release-datadog",
+					"container_id:451d0c91b0bcfccff217582724dc0adf027ce9f20d03aed973eda100c4d944e1",
+					"display_container_name:k8s_trace-agent_release-datadog-jsw4z_default_caee2b10-3d11-4f8a-9da6-f4765702d91f_0_release-datadog-jsw4z"
+				]
+			}
+		},
+		"container_id://4ce013145f11760098df5f8f9152ecea0703915b637971a537516be9cf4bb569": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"container_name:k8s_POD_prometheus-deployment-65d8cd6c4-cpqgj_default_6025f21b-8a0b-4ff3-81dd-7621deabfcc6_0",
+					"container_id:4ce013145f11760098df5f8f9152ecea0703915b637971a537516be9cf4bb569"
+				]
+			}
+		},
+		"container_id://4dab4313eb8c6081b0fa12a58c6bba234a6c251cc55e4f751309785f1272cc88": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"container_name:k8s_POD_kube-controller-manager-minikube_kube-system_b965983ec05322d0973594a01d5e8245_1",
+					"container_id:4dab4313eb8c6081b0fa12a58c6bba234a6c251cc55e4f751309785f1272cc88"
+				]
+			}
+		},
+		"container_id://510637a081cb2976e32d893402e782eb490db718b0329ccfb250c1c0f2987e55": {
+			"tags": {
+				"workloadmeta-container": [
+					"docker_image:prom/prometheus:latest",
+					"image_name:prom/prometheus",
+					"short_image:prometheus",
+					"image_tag:latest",
+					"container_name:k8s_prometheus_prometheus-65d8cd6c4-qwvhk_default_4d49db0a-aaa1-4f32-881c-e9665b8cdec6_0",
+					"container_id:510637a081cb2976e32d893402e782eb490db718b0329ccfb250c1c0f2987e55"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_service:prometheus-deployment",
+					"kube_deployment:prometheus",
+					"image_name:prom/prometheus",
+					"image_id:********@sha256:b37103e03399e90c9b7b1b2940894d3634915cf9df4aa2e5402bd85b4377808c",
+					"kube_service:pa-service",
+					"kube_ownerref_kind:replicaset",
+					"short_image:prometheus",
+					"image_tag:latest",
+					"kube_service:prometheus-service",
+					"kube_namespace:default",
+					"kube_container_name:prometheus",
+					"pod_phase:running",
+					"kube_replica_set:prometheus-65d8cd6c4",
+					"kube_service:prometheus-example-service",
+					"kube_service:apache-exporter",
+					"pod_name:prometheus-65d8cd6c4-qwvhk",
+					"kube_ownerref_name:prometheus-65d8cd6c4",
+					"container_id:510637a081cb2976e32d893402e782eb490db718b0329ccfb250c1c0f2987e55",
+					"display_container_name:k8s_prometheus_prometheus-65d8cd6c4-qwvhk_default_4d49db0a-aaa1-4f32-881c-e9665b8cdec6_0_prometheus-65d8cd6c4-qwvhk"
+				]
+			}
+		},
+		"container_id://52b0f6a5a8c3921cb7a9bd63022360e2cc30dc3fce45e1b713c9552b966ff971": {
+			"tags": {
+				"workloadmeta-container": [
+					"docker_image:gcr.io/datadoghq/cluster-agent:1.18.0",
+					"image_name:gcr.io/datadoghq/cluster-agent",
+					"short_image:cluster-agent",
+					"image_tag:1.18.0",
+					"container_name:k8s_cluster-agent_release-datadog-cluster-agent-564cdc4768-hbnls_default_e19a97b2-da2f-48aa-a2e0-3fbd61ef18b7_0",
+					"container_id:52b0f6a5a8c3921cb7a9bd63022360e2cc30dc3fce45e1b713c9552b966ff971"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_app_name:release-datadog",
+					"kube_deployment:release-datadog-cluster-agent",
+					"kube_app_managed_by:Helm",
+					"image_name:gcr.io/datadoghq/cluster-agent",
+					"image_tag:1.18.0",
+					"kube_ownerref_kind:replicaset",
+					"kube_app_component:cluster-agent",
+					"kube_app_instance:release",
+					"kube_replica_set:release-datadog-cluster-agent-564cdc4768",
+					"kube_namespace:default",
+					"pod_phase:running",
+					"kube_service:release-datadog-cluster-agent",
+					"kube_container_name:cluster-agent",
+					"short_image:cluster-agent",
+					"image_id:********@sha256:e6f5d92345a28f5d39996cd5d3e6372bf649aee8ee7e1ac5ac09829504600d6d",
+					"pod_name:release-datadog-cluster-agent-564cdc4768-hbnls",
+					"kube_ownerref_name:release-datadog-cluster-agent-564cdc4768",
+					"display_container_name:k8s_cluster-agent_release-datadog-cluster-agent-564cdc4768-hbnls_default_e19a97b2-da2f-48aa-a2e0-3fbd61ef18b7_0_release-datadog-cluster-agent-564cdc4768-hbnls",
+					"container_id:52b0f6a5a8c3921cb7a9bd63022360e2cc30dc3fce45e1b713c9552b966ff971"
+				]
+			}
+		},
+		"container_id://6713307f09e0863979ee125f1272d2f4aacb8cc581ca1f7060c3e8a6a7cf5852": {
+			"tags": {
+				"workloadmeta-container": [
+					"short_image:kube-scheduler",
+					"image_tag:v1.23.3",
+					"docker_image:k8s.gcr.io/kube-scheduler:v1.23.3",
+					"image_name:k8s.gcr.io/kube-scheduler",
+					"container_name:k8s_kube-scheduler_kube-scheduler-minikube_kube-system_be132fe5c6572cb34d93f5e05ce2a540_1",
+					"container_id:6713307f09e0863979ee125f1272d2f4aacb8cc581ca1f7060c3e8a6a7cf5852"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"image_id:********@sha256:32308abe86f7415611ca86ee79dd0a73e74ebecb2f9e3eb85fc3a8e62f03d0e7",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"kube_container_name:kube-scheduler",
+					"image_name:k8s.gcr.io/kube-scheduler",
+					"short_image:kube-scheduler",
+					"image_tag:v1.23.3",
+					"pod_name:kube-scheduler-minikube",
+					"container_id:6713307f09e0863979ee125f1272d2f4aacb8cc581ca1f7060c3e8a6a7cf5852",
+					"display_container_name:k8s_kube-scheduler_kube-scheduler-minikube_kube-system_be132fe5c6572cb34d93f5e05ce2a540_1_kube-scheduler-minikube"
+				]
+			}
+		},
+		"container_id://6da016565a94427f63e6036cdfbda62c8e57b0f9e2ce00954a449b4f047a6496": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"container_name:k8s_POD_release-datadog-jsw4z_default_caee2b10-3d11-4f8a-9da6-f4765702d91f_0",
+					"container_id:6da016565a94427f63e6036cdfbda62c8e57b0f9e2ce00954a449b4f047a6496"
+				]
+			}
+		},
+		"container_id://6ddee4d792bba2b6bd13b3e16603a74a86d2eb39b695f37db77e66d73ff5d179": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"container_name:k8s_POD_kube-apiserver-minikube_kube-system_cd6e47233d36a9715b0ab9632f871843_1",
+					"container_id:6ddee4d792bba2b6bd13b3e16603a74a86d2eb39b695f37db77e66d73ff5d179"
+				]
+			}
+		},
+		"container_id://6e8b1e208bd33b6fc81ae4d2922154db7cd29b1a02f632bf3736c80ce44ec47e": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"container_name:k8s_POD_release-datadog-cluster-agent-676f844767-c6lg2_default_c8d4e278-7a58-453a-aebe-2c72d5ac3f76_0",
+					"container_id:6e8b1e208bd33b6fc81ae4d2922154db7cd29b1a02f632bf3736c80ce44ec47e"
+				]
+			}
+		},
+		"container_id://7ba31a12b2576b1e16948d2ddffdc89bb8be57741135c33aacdc790f14f6ba4b": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"container_name:k8s_POD_kube-scheduler-minikube_kube-system_be132fe5c6572cb34d93f5e05ce2a540_1",
+					"container_id:7ba31a12b2576b1e16948d2ddffdc89bb8be57741135c33aacdc790f14f6ba4b"
+				]
+			}
+		},
+		"container_id://7db54c0389e84a3f9ff09300ea70e25fd1a29bb04f8ff31d0435f18b4aad4a00": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/kube-proxy",
+					"short_image:kube-proxy",
+					"image_tag:v1.23.3",
+					"docker_image:k8s.gcr.io/kube-proxy:v1.23.3",
+					"container_name:k8s_kube-proxy_kube-proxy-jsh2j_kube-system_d0f8cb24-b834-415f-a510-b206dc942578_1",
+					"container_id:7db54c0389e84a3f9ff09300ea70e25fd1a29bb04f8ff31d0435f18b4aad4a00"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_daemon_set:kube-proxy",
+					"kube_priority_class:system-node-critical",
+					"kube_container_name:kube-proxy",
+					"image_name:k8s.gcr.io/kube-proxy",
+					"short_image:kube-proxy",
+					"kube_ownerref_kind:daemonset",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"image_tag:v1.23.3",
+					"image_id:********@sha256:def87f007b49d50693aed83d4703d0e56c69ae286154b1c7a20cd1b3a320cf7c",
+					"kube_ownerref_name:kube-proxy",
+					"pod_name:kube-proxy-jsh2j",
+					"container_id:7db54c0389e84a3f9ff09300ea70e25fd1a29bb04f8ff31d0435f18b4aad4a00",
+					"display_container_name:k8s_kube-proxy_kube-proxy-jsh2j_kube-system_d0f8cb24-b834-415f-a510-b206dc942578_1_kube-proxy-jsh2j"
+				]
+			}
+		},
+		"container_id://861e070e781ba7e9ccbec4e77363a1344f2a707d037bb5738c4b1ae607b3ac6b": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/kube-state-metrics/kube-state-metrics",
+					"short_image:kube-state-metrics",
+					"image_tag:v1.9.8",
+					"docker_image:k8s.gcr.io/kube-state-metrics/kube-state-metrics:v1.9.8",
+					"container_name:k8s_kube-state-metrics_release-kube-state-metrics-c4787c9c4-pdk76_default_2e18de2a-1945-4bc9-8c5b-8f85ce573092_2",
+					"container_id:861e070e781ba7e9ccbec4e77363a1344f2a707d037bb5738c4b1ae607b3ac6b"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"short_image:kube-state-metrics",
+					"kube_service:release-kube-state-metrics",
+					"kube_replica_set:release-kube-state-metrics-c4787c9c4",
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:release-kube-state-metrics",
+					"kube_namespace:default",
+					"pod_phase:running",
+					"kube_container_name:kube-state-metrics",
+					"image_name:k8s.gcr.io/kube-state-metrics/kube-state-metrics",
+					"kube_app_name:kube-state-metrics",
+					"kube_app_instance:release",
+					"image_tag:v1.9.8",
+					"image_id:********@sha256:47d3a12d9da6699a9d95df8aaff235305229ef08203fae3fc1f1d47b2a409f89",
+					"pod_name:release-kube-state-metrics-c4787c9c4-pdk76",
+					"kube_ownerref_name:release-kube-state-metrics-c4787c9c4",
+					"container_id:861e070e781ba7e9ccbec4e77363a1344f2a707d037bb5738c4b1ae607b3ac6b",
+					"display_container_name:k8s_kube-state-metrics_release-kube-state-metrics-c4787c9c4-pdk76_default_2e18de2a-1945-4bc9-8c5b-8f85ce573092_2_release-kube-state-metrics-c4787c9c4-pdk76"
+				]
+			}
+		},
+		"container_id://865aeae996e8b59369d943ec9387870ac1929b2ffbcfe08b65d61887942d15bd": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_tag:3.5.1-0",
+					"docker_image:k8s.gcr.io/etcd:3.5.1-0",
+					"image_name:k8s.gcr.io/etcd",
+					"short_image:etcd",
+					"container_name:k8s_etcd_etcd-minikube_kube-system_9d3d310935e5fabe942511eec3e2cd0c_1",
+					"container_id:865aeae996e8b59369d943ec9387870ac1929b2ffbcfe08b65d61887942d15bd"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"kube_container_name:etcd",
+					"image_name:k8s.gcr.io/etcd",
+					"short_image:etcd",
+					"image_tag:3.5.1-0",
+					"image_id:********@sha256:64b9ea357325d5db9f8a723dcf503b5a449177b17ac87d69481e126bb724c263",
+					"pod_name:etcd-minikube",
+					"container_id:865aeae996e8b59369d943ec9387870ac1929b2ffbcfe08b65d61887942d15bd",
+					"display_container_name:k8s_etcd_etcd-minikube_kube-system_9d3d310935e5fabe942511eec3e2cd0c_1_etcd-minikube"
+				]
+			}
+		},
+		"container_id://8a07da82d1d9a2ccd61579f383c58b37143c81c6e51d17e41bae8044c0942723": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"container_name:k8s_POD_kube-proxy-jsh2j_kube-system_d0f8cb24-b834-415f-a510-b206dc942578_1",
+					"container_id:8a07da82d1d9a2ccd61579f383c58b37143c81c6e51d17e41bae8044c0942723"
+				]
+			}
+		},
+		"container_id://8cd1f3de22d31668af5c02273e05e7367516249f677f86acb4dcd6dcec9b4aca": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/kube-apiserver",
+					"short_image:kube-apiserver",
+					"image_tag:v1.23.3",
+					"docker_image:k8s.gcr.io/kube-apiserver:v1.23.3",
+					"container_name:k8s_kube-apiserver_kube-apiserver-minikube_kube-system_cd6e47233d36a9715b0ab9632f871843_1",
+					"container_id:8cd1f3de22d31668af5c02273e05e7367516249f677f86acb4dcd6dcec9b4aca"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"short_image:kube-apiserver",
+					"image_tag:v1.23.3",
+					"image_id:********@sha256:b8eba88862bab7d3d7cdddad669ff1ece006baa10d3a3df119683434497a0949",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"kube_container_name:kube-apiserver",
+					"image_name:k8s.gcr.io/kube-apiserver",
+					"pod_name:kube-apiserver-minikube",
+					"display_container_name:k8s_kube-apiserver_kube-apiserver-minikube_kube-system_cd6e47233d36a9715b0ab9632f871843_1_kube-apiserver-minikube",
+					"container_id:8cd1f3de22d31668af5c02273e05e7367516249f677f86acb4dcd6dcec9b4aca"
+				]
+			}
+		},
+		"container_id://8ea5e953e11ef2b803bb97fcd9d821e9ff776f5436c79caa7439619f861a7087": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:gcr.io/datadoghq/agent",
+					"short_image:agent",
+					"image_tag:7.34.0",
+					"docker_image:gcr.io/datadoghq/agent:7.34.0",
+					"container_name:k8s_process-agent_release-datadog-jsw4z_default_caee2b10-3d11-4f8a-9da6-f4765702d91f_0",
+					"container_id:8ea5e953e11ef2b803bb97fcd9d821e9ff776f5436c79caa7439619f861a7087"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_daemon_set:release-datadog",
+					"kube_app_managed_by:Helm",
+					"kube_app_component:agent",
+					"kube_ownerref_kind:daemonset",
+					"image_id:********@sha256:2ef4ef739b3809872bc8bb959b19c0fc665d239cae306c7adec95e63deb4ab3c",
+					"kube_namespace:default",
+					"kube_app_instance:release",
+					"kube_app_name:release-datadog",
+					"image_name:gcr.io/datadoghq/agent",
+					"kube_service:release-datadog",
+					"kube_container_name:process-agent",
+					"short_image:agent",
+					"image_tag:7.34.0",
+					"pod_phase:running",
+					"pod_name:release-datadog-jsw4z",
+					"kube_ownerref_name:release-datadog",
+					"container_id:8ea5e953e11ef2b803bb97fcd9d821e9ff776f5436c79caa7439619f861a7087",
+					"display_container_name:k8s_process-agent_release-datadog-jsw4z_default_caee2b10-3d11-4f8a-9da6-f4765702d91f_0_release-datadog-jsw4z"
+				]
+			}
+		},
+		"container_id://b3e705fbde139936e41d19a2bd9652f7b3031b1b80d6f2b5e155eb6a9bbac1da": {
+			"tags": {
+				"workloadmeta-container": [
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"image_tag:3.6",
+					"container_id:b3e705fbde139936e41d19a2bd9652f7b3031b1b80d6f2b5e155eb6a9bbac1da",
+					"container_name:k8s_POD_prometheus-apache_default_520dc696-f955-452f-bd66-6ccfcaecfbc3_0"
+				]
+			}
+		},
+		"container_id://b54efcf1cce513714644d4f8e1e7b71a27e7584925d7df09a542afeca4ba9c58": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:redis",
+					"short_image:redis",
+					"image_tag:latest",
+					"docker_image:redis:latest",
+					"container_name:k8s_redis_redis_default_2be40fbc-0cb5-440b-bd3a-6e19031c7441_0",
+					"container_id:b54efcf1cce513714644d4f8e1e7b71a27e7584925d7df09a542afeca4ba9c58"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"image_id:********@sha256:69a3ab2516b560690e37197b71bc61ba245aafe4525ebdece1d8a0bc5669e3e2",
+					"kube_namespace:default",
+					"pod_phase:running",
+					"kube_container_name:redis",
+					"image_name:redis",
+					"short_image:redis",
+					"image_tag:latest",
+					"pod_name:redis",
+					"container_id:b54efcf1cce513714644d4f8e1e7b71a27e7584925d7df09a542afeca4ba9c58",
+					"display_container_name:k8s_redis_redis_default_2be40fbc-0cb5-440b-bd3a-6e19031c7441_0_redis"
+				]
+			}
+		},
+		"container_id://c34109900dfc385f2f6321c9ef57b6a16354ac8058d9b65dbf910d857e5129a3": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/coredns/coredns",
+					"short_image:coredns",
+					"image_tag:v1.8.6",
+					"docker_image:k8s.gcr.io/coredns/coredns:v1.8.6",
+					"container_name:k8s_coredns_coredns-64897985d-jf8f5_kube-system_b2102ee9-3149-43d8-a3ba-18ff36b70027_1",
+					"container_id:c34109900dfc385f2f6321c9ef57b6a16354ac8058d9b65dbf910d857e5129a3"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:coredns",
+					"kube_container_name:coredns",
+					"short_image:coredns",
+					"kube_namespace:kube-system",
+					"kube_priority_class:system-cluster-critical",
+					"kube_service:kube-dns",
+					"image_name:k8s.gcr.io/coredns/coredns",
+					"image_tag:v1.8.6",
+					"image_id:********@sha256:5b6ec0d6de9baaf3e92d0f66cd96a25b9edbce8716f5f15dcd1a616b3abd590e",
+					"kube_replica_set:coredns-64897985d",
+					"pod_phase:running",
+					"pod_name:coredns-64897985d-jf8f5",
+					"kube_ownerref_name:coredns-64897985d",
+					"container_id:c34109900dfc385f2f6321c9ef57b6a16354ac8058d9b65dbf910d857e5129a3",
+					"display_container_name:k8s_coredns_coredns-64897985d-jf8f5_kube-system_b2102ee9-3149-43d8-a3ba-18ff36b70027_1_coredns-64897985d-jf8f5"
+				]
+			}
+		},
+		"container_id://d40b0762921faed13cafd98d517a8857fffe964c889e1fe1ed11f6bf7bf00ffb": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:prom/prometheus",
+					"short_image:prometheus",
+					"image_tag:latest",
+					"docker_image:prom/prometheus:latest",
+					"container_name:k8s_prometheus_prometheus-deployment-65d8cd6c4-cpqgj_default_6025f21b-8a0b-4ff3-81dd-7621deabfcc6_0",
+					"container_id:d40b0762921faed13cafd98d517a8857fffe964c889e1fe1ed11f6bf7bf00ffb"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_deployment:prometheus-deployment",
+					"kube_service:prometheus-deployment",
+					"short_image:prometheus",
+					"image_tag:latest",
+					"kube_replica_set:prometheus-deployment-65d8cd6c4",
+					"kube_namespace:default",
+					"kube_service:pa-service",
+					"image_name:prom/prometheus",
+					"image_id:********@sha256:b37103e03399e90c9b7b1b2940894d3634915cf9df4aa2e5402bd85b4377808c",
+					"kube_service:prometheus-service",
+					"kube_service:apache-exporter",
+					"kube_service:prometheus-example-service",
+					"pod_phase:running",
+					"kube_ownerref_kind:replicaset",
+					"kube_container_name:prometheus",
+					"pod_name:prometheus-deployment-65d8cd6c4-cpqgj",
+					"kube_ownerref_name:prometheus-deployment-65d8cd6c4",
+					"container_id:d40b0762921faed13cafd98d517a8857fffe964c889e1fe1ed11f6bf7bf00ffb",
+					"display_container_name:k8s_prometheus_prometheus-deployment-65d8cd6c4-cpqgj_default_6025f21b-8a0b-4ff3-81dd-7621deabfcc6_0_prometheus-deployment-65d8cd6c4-cpqgj"
+				]
+			}
+		},
+		"container_id://db30e2571e3aa9af8ba52eced6c8693cf4171480165317fa6564c2e9869f7f4b": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:k8s.gcr.io/pause",
+					"short_image:pause",
+					"image_tag:3.6",
+					"docker_image:k8s.gcr.io/pause:3.6",
+					"container_name:k8s_POD_prometheus-65d8cd6c4-qwvhk_default_4d49db0a-aaa1-4f32-881c-e9665b8cdec6_0",
+					"container_id:db30e2571e3aa9af8ba52eced6c8693cf4171480165317fa6564c2e9869f7f4b"
+				]
+			}
+		},
+		"container_id://f80a7a72deb4775a15fb838b7b8c375e768d6e4603544fa83b0fd09a559946a0": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:gcr.io/datadoghq/agent",
+					"short_image:agent",
+					"image_tag:7.34.0",
+					"docker_image:gcr.io/datadoghq/agent:7.34.0",
+					"container_name:k8s_agent_release-datadog-jsw4z_default_caee2b10-3d11-4f8a-9da6-f4765702d91f_0",
+					"container_id:f80a7a72deb4775a15fb838b7b8c375e768d6e4603544fa83b0fd09a559946a0"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_app_component:agent",
+					"kube_daemon_set:release-datadog",
+					"image_name:gcr.io/datadoghq/agent",
+					"kube_namespace:default",
+					"kube_app_instance:release",
+					"image_tag:7.34.0",
+					"image_id:********@sha256:2ef4ef739b3809872bc8bb959b19c0fc665d239cae306c7adec95e63deb4ab3c",
+					"kube_app_managed_by:Helm",
+					"pod_phase:running",
+					"kube_app_name:release-datadog",
+					"short_image:agent",
+					"kube_service:release-datadog",
+					"kube_container_name:agent",
+					"kube_ownerref_kind:daemonset",
+					"pod_name:release-datadog-jsw4z",
+					"kube_ownerref_name:release-datadog",
+					"container_id:f80a7a72deb4775a15fb838b7b8c375e768d6e4603544fa83b0fd09a559946a0",
+					"display_container_name:k8s_agent_release-datadog-jsw4z_default_caee2b10-3d11-4f8a-9da6-f4765702d91f_0_release-datadog-jsw4z"
+				]
+			}
+		},
+		"kubernetes_pod_uid://16b52cb6-949a-4a39-af1a-2317e226f344": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"pod_name:storage-provisioner"
+				]
+			}
+		},
+		"kubernetes_pod_uid://2be40fbc-0cb5-440b-bd3a-6e19031c7441": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:default",
+					"pod_phase:running",
+					"pod_name:redis"
+				]
+			}
+		},
+		"kubernetes_pod_uid://2e18de2a-1945-4bc9-8c5b-8f85ce573092": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_replica_set:release-kube-state-metrics-c4787c9c4",
+					"kube_namespace:default",
+					"pod_phase:running",
+					"kube_app_name:kube-state-metrics",
+					"kube_app_instance:release",
+					"kube_service:release-kube-state-metrics",
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:release-kube-state-metrics",
+					"pod_name:release-kube-state-metrics-c4787c9c4-pdk76",
+					"kube_ownerref_name:release-kube-state-metrics-c4787c9c4"
+				]
+			}
+		},
+		"kubernetes_pod_uid://4d49db0a-aaa1-4f32-881c-e9665b8cdec6": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_service:prometheus-example-service",
+					"kube_deployment:prometheus",
+					"kube_service:apache-exporter",
+					"pod_phase:running",
+					"kube_service:pa-service",
+					"kube_service:prometheus-deployment",
+					"kube_service:prometheus-service",
+					"kube_ownerref_kind:replicaset",
+					"kube_replica_set:prometheus-65d8cd6c4",
+					"kube_namespace:default",
+					"pod_name:prometheus-65d8cd6c4-qwvhk",
+					"kube_ownerref_name:prometheus-65d8cd6c4"
+				]
+			}
+		},
+		"kubernetes_pod_uid://6025f21b-8a0b-4ff3-81dd-7621deabfcc6": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"pod_phase:running",
+					"kube_ownerref_kind:replicaset",
+					"kube_service:prometheus-example-service",
+					"kube_service:prometheus-service",
+					"kube_deployment:prometheus-deployment",
+					"kube_replica_set:prometheus-deployment-65d8cd6c4",
+					"kube_namespace:default",
+					"kube_service:apache-exporter",
+					"kube_service:pa-service",
+					"kube_service:prometheus-deployment",
+					"kube_ownerref_name:prometheus-deployment-65d8cd6c4",
+					"pod_name:prometheus-deployment-65d8cd6c4-cpqgj"
+				]
+			}
+		},
+		"kubernetes_pod_uid://***************************2cd0c": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"pod_name:etcd-minikube"
+				]
+			}
+		},
+		"kubernetes_pod_uid://b2102ee9-3149-43d8-a3ba-18ff36b70027": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"pod_phase:running",
+					"kube_priority_class:system-cluster-critical",
+					"kube_service:kube-dns",
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:coredns",
+					"kube_replica_set:coredns-64897985d",
+					"kube_namespace:kube-system",
+					"pod_name:coredns-64897985d-jf8f5",
+					"kube_ownerref_name:coredns-64897985d"
+				]
+			}
+		},
+		"kubernetes_pod_uid://***************************e8245": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_priority_class:system-node-critical",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"pod_name:kube-controller-manager-minikube"
+				]
+			}
+		},
+		"kubernetes_pod_uid://***************************2a540": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"pod_name:kube-scheduler-minikube"
+				]
+			}
+		},
+		"kubernetes_pod_uid://caee2b10-3d11-4f8a-9da6-f4765702d91f": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_app_managed_by:Helm",
+					"kube_app_component:agent",
+					"kube_service:release-datadog",
+					"kube_namespace:default",
+					"kube_app_instance:release",
+					"kube_app_name:release-datadog",
+					"kube_ownerref_kind:daemonset",
+					"kube_daemon_set:release-datadog",
+					"pod_phase:running",
+					"pod_name:release-datadog-jsw4z",
+					"kube_ownerref_name:release-datadog"
+				]
+			}
+		},
+		"kubernetes_pod_uid://***************************71843": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"pod_name:kube-apiserver-minikube"
+				]
+			}
+		},
+		"kubernetes_pod_uid://d0f8cb24-b834-415f-a510-b206dc942578": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"kube_ownerref_kind:daemonset",
+					"kube_daemon_set:kube-proxy",
+					"pod_name:kube-proxy-jsh2j",
+					"kube_ownerref_name:kube-proxy"
+				]
+			}
+		},
+		"kubernetes_pod_uid://d5efcf8b-f09b-4d20-a092-991c0084324a": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:default",
+					"pod_phase:running",
+					"pod_name:prometheus-apache"
+				]
+			}
+		},
+		"kubernetes_pod_uid://e19a97b2-da2f-48aa-a2e0-3fbd61ef18b7": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:release-datadog-cluster-agent",
+					"kube_app_managed_by:Helm",
+					"kube_service:release-datadog-cluster-agent",
+					"kube_app_name:release-datadog",
+					"kube_app_component:cluster-agent",
+					"kube_app_instance:release",
+					"kube_replica_set:release-datadog-cluster-agent-564cdc4768",
+					"kube_namespace:default",
+					"pod_phase:running",
+					"kube_ownerref_name:release-datadog-cluster-agent-564cdc4768",
+					"pod_name:release-datadog-cluster-agent-564cdc4768-hbnls"
+				]
+			}
+		}
+	}
+}

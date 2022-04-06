@@ -1,0 +1,36 @@
+BytesSent: 7.593104e+06
+DestinationErrors: 0
+DestinationLogsDropped: {}
+EncodedBytesSent: 694566
+Errors: ""
+HttpDestinationStats:
+  dbm-activity_2_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  dbm-metrics_1_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  dbm-samples_0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  logs_0_reliable_0:
+    idleMs: 1.614981e+06
+    inUseMs: 1
+  logs_1_reliable_0:
+    idleMs: 1.639785e+06
+    inUseMs: 10
+  logs_2_reliable_0:
+    idleMs: 1.639851e+06
+    inUseMs: 5
+  logs_3_reliable_0:
+    idleMs: 1.639893e+06
+    inUseMs: 5
+  network-devices-metadata_3_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+IsRunning: true
+LogsDecoded: 4768
+LogsProcessed: 4768
+LogsSent: 4766
+SenderLatency: 76
+Warnings: ""

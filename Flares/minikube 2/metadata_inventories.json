@@ -1,0 +1,179 @@
+{
+    "hostname": "minikube",
+    "timestamp": 1649208712943769300,
+    "check_metadata": {
+        "container": [
+            {
+                "config.hash": "container",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "coredns": [
+            {
+                "config.hash": "coredns:7151759ebea2ff5c",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "cpu": [
+            {
+                "config.hash": "cpu",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "datadog_cluster_agent": [
+            {
+                "config.hash": "datadog_cluster_agent:19d65ec159b29853",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "disk": [
+            {
+                "config.hash": "disk:e5dffb8bef24336f",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "docker": [
+            {
+                "config.hash": "docker",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "etcd": [],
+        "file_handle": [
+            {
+                "config.hash": "file_handle",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "io": [
+            {
+                "config.hash": "io",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "kube_apiserver_metrics": [
+            {
+                "config.hash": "kube_apiserver_metrics:cd39f757004b465c",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "kube_controller_manager": [],
+        "kube_scheduler": [],
+        "kubelet": [
+            {
+                "config.hash": "kubelet:5bbc63f3938c02f4",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "kubernetes_state": [
+            {
+                "config.hash": "kubernetes_state:a600c68b82b5b637",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "load": [
+            {
+                "config.hash": "load",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "memory": [
+            {
+                "config.hash": "memory",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "network": [
+            {
+                "config.hash": "network:d884b5186b651429",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "ntp": [
+            {
+                "config.hash": "ntp:d884b5186b651429",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "openmetrics": [
+            {
+                "config.hash": "openmetrics:namespace1:cc46577d11df5c72",
+                "config.provider": "cluster-checks",
+                "last_updated": 1649192799379928700
+            },
+            {
+                "config.hash": "openmetrics:a62d145c0e6f0970",
+                "config.provider": "cluster-checks",
+                "last_updated": 1649192799379928700
+            },
+            {
+                "config.hash": "openmetrics:namespace1:269c209a326ac5d6",
+                "config.provider": "cluster-checks",
+                "last_updated": 1649192799379928700
+            },
+            {
+                "config.hash": "openmetrics:4b941f9c081274e3",
+                "config.provider": "cluster-checks",
+                "last_updated": 1649192799379928700
+            }
+        ],
+        "redisdb": [
+            {
+                "config.hash": "redisdb:a368964ca116cc93",
+                "config.provider": "kubernetes",
+                "last_updated": 1649192826000166300,
+                "version.major": "6",
+                "version.minor": "2",
+                "version.patch": "6",
+                "version.raw": "6.2.6",
+                "version.scheme": "semver"
+            }
+        ],
+        "uptime": [
+            {
+                "config.hash": "uptime",
+                "config.provider": "file",
+                "last_updated": 1649192799379928700
+            }
+        ]
+    },
+    "agent_metadata": {
+        "agent_version": "7.34.0",
+        "config_apm_dd_url": "",
+        "config_dd_url": "",
+        "config_logs_dd_url": "",
+        "config_logs_socks5_proxy_address": "",
+        "config_no_proxy": [],
+        "config_process_dd_url": "",
+        "config_proxy_http": "",
+        "config_proxy_https": "",
+        "config_site": "",
+        "feature_apm_enabled": false,
+        "feature_cspm_enabled": false,
+        "feature_cws_enabled": false,
+        "feature_logs_enabled": true,
+        "feature_networks_enabled": false,
+        "feature_process_enabled": false,
+        "flavor": "agent",
+        "hostname_source": "container",
+        "install_method_installer_version": "datadog-2.31.0",
+        "install_method_tool": "helm",
+        "install_method_tool_version": "Helm",
+        "logs_transport": "HTTP"
+    }
+}

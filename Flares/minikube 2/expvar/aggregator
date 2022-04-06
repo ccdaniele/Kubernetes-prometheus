@@ -1,0 +1,364 @@
+ChecksHistogramBucketMetricSample: 0
+ChecksMetricSample: 1.3493891e+07
+ContainerLifecycleEvents: 0
+ContainerLifecycleEventsErrors: 0
+DogstatsdContexts: 66
+DogstatsdMetricSample: 122154
+Event: 10
+EventPlatformEvents: {}
+EventPlatformEventsErrors: {}
+EventsFlushErrors: 0
+EventsFlushed: 10
+Flush:
+  ChecksMetricSampleFlushTime:
+    FlushIndex: 28
+    Flushes:
+    - 8.2293e+07
+    - 1.067891e+08
+    - 1.20229e+08
+    - 1.590549e+08
+    - 1.022555e+08
+    - 9.00333e+07
+    - 1.069605e+08
+    - 9.62266e+07
+    - 1.016105e+08
+    - 9.44966e+07
+    - 2.221786e+08
+    - 1.135141e+08
+    - 9.08441e+07
+    - 3.639293e+08
+    - 1.211164e+08
+    - 1.277879e+08
+    - 1.076818e+08
+    - 8.05262e+07
+    - 1.207875e+08
+    - 1.026633e+08
+    - 1.042955e+08
+    - 9.6774e+07
+    - 1.370761e+08
+    - 9.71537e+07
+    - 1.087143e+08
+    - 1.05631e+08
+    - 9.24967e+07
+    - 9.71252e+07
+    - 1.437196e+08
+    - 8.45608e+07
+    - 1.018325e+08
+    - 1.993751e+08
+    LastFlush: 1.437196e+08
+    Name: ChecksMetricSampleFlushTime
+  EventFlushTime:
+    FlushIndex: 6
+    Flushes:
+    - 5.42358e+07
+    - 1.899851e+08
+    - 4.4068e+06
+    - 8.89204e+07
+    - 9.63748e+07
+    - 1.597122e+08
+    - 4.35875e+07
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    LastFlush: 4.35875e+07
+    Name: EventFlushTime
+  MainFlushTime:
+    FlushIndex: 28
+    Flushes:
+    - 1.7441e+06
+    - 966400
+    - 1.85611e+07
+    - 3.4363e+06
+    - 5.8374e+06
+    - 3.0967e+06
+    - 5.0867e+06
+    - 7.1183e+06
+    - 2.5785e+06
+    - 5.7042e+06
+    - 3.47766e+07
+    - 1.40546e+07
+    - 3.0892e+06
+    - 8.41103e+07
+    - 5.3459e+06
+    - 6.6843e+06
+    - 7.9952e+06
+    - 933700
+    - 8.1089e+06
+    - 8.8384e+06
+    - 1.10724e+07
+    - 8.5491e+06
+    - 2.0141e+06
+    - 2.2025e+06
+    - 1.37934e+07
+    - 4.5145e+06
+    - 6.2761e+06
+    - 7.9054e+06
+    - 2.7287e+06
+    - 1.7841e+06
+    - 2.833e+06
+    - 4.3467e+06
+    LastFlush: 2.7287e+06
+    Name: MainFlushTime
+  MetricSketchFlushTime:
+    FlushIndex: -1
+    Flushes:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    LastFlush: 0
+    Name: MetricSketchFlushTime
+  ServiceCheckFlushTime:
+    FlushIndex: 28
+    Flushes:
+    - 8.2777e+07
+    - 1.075165e+08
+    - 1.209534e+08
+    - 7.3361e+06
+    - 1.024491e+08
+    - 9.07618e+07
+    - 9.0788e+06
+    - 9.72882e+07
+    - 1.030885e+08
+    - 1.30496e+07
+    - 2.247317e+08
+    - 1.147646e+08
+    - 9.30244e+07
+    - 3.66689e+08
+    - 1.20148e+08
+    - 1.231037e+08
+    - 1.089413e+08
+    - 1.4205e+06
+    - 1.31848e+07
+    - 1.060306e+08
+    - 1.062605e+08
+    - 9.78754e+07
+    - 1.554225e+08
+    - 9.78765e+07
+    - 1.098943e+08
+    - 1.079902e+08
+    - 9.36433e+07
+    - 9.73391e+07
+    - 3.5722e+06
+    - 8.52471e+07
+    - 1.027222e+08
+    - 2.000279e+08
+    LastFlush: 3.5722e+06
+    Name: ServiceCheckFlushTime
+FlushCount:
+  Events:
+    FlushIndex: 6
+    Flushes:
+    - 1
+    - 3
+    - 1
+    - 1
+    - 1
+    - 2
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    LastFlush: 1
+    Name: Events
+  Series:
+    FlushIndex: 28
+    Flushes:
+    - 13789
+    - 12696
+    - 13788
+    - 13780
+    - 13789
+    - 12902
+    - 14051
+    - 14051
+    - 14051
+    - 13002
+    - 14135
+    - 14136
+    - 14156
+    - 13040
+    - 14156
+    - 14156
+    - 14156
+    - 13040
+    - 14156
+    - 14162
+    - 14162
+    - 13046
+    - 14162
+    - 14162
+    - 14162
+    - 13046
+    - 14162
+    - 14162
+    - 14158
+    - 12630
+    - 13788
+    - 13788
+    LastFlush: 14158
+    Name: Series
+  ServiceChecks:
+    FlushIndex: 28
+    Flushes:
+    - 39
+    - 32
+    - 37
+    - 35
+    - 37
+    - 34
+    - 37
+    - 37
+    - 37
+    - 32
+    - 37
+    - 37
+    - 37
+    - 32
+    - 37
+    - 37
+    - 37
+    - 32
+    - 37
+    - 37
+    - 37
+    - 32
+    - 37
+    - 37
+    - 37
+    - 32
+    - 37
+    - 37
+    - 37
+    - 32
+    - 37
+    - 37
+    LastFlush: 37
+    Name: ServiceChecks
+  Sketches:
+    FlushIndex: 28
+    Flushes:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    LastFlush: 0
+    Name: Sketches
+HostnameUpdate: 0
+MetricTags:
+  Series:
+    Above90: 0
+    Above100: 0
+  Sketches:
+    Above90: 0
+    Above100: 0
+NumberOfFlush: 989
+OrchestratorMetadata: 0
+OrchestratorMetadataErrors: 0
+SeriesFlushErrors: 0
+SeriesFlushed: 1.3242475e+07
+ServiceCheck: 34365
+ServiceCheckFlushErrors: 0
+ServiceCheckFlushed: 35349
+SketchesFlushErrors: 0
+SketchesFlushed: 0

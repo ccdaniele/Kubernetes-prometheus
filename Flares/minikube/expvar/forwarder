@@ -1,0 +1,94 @@
+APIKeyStatus:
+  API key ending with 506f1: API Key valid
+FileStorage:
+  CurrentSizeInBytes: 0
+  DeserializeCount: 0
+  DeserializeErrorsCount: 0
+  DeserializeTransactionsCount: 0
+  FileSize: 0
+  FilesCount: 0
+  FilesRemovedCount: 0
+  SerializeCount: 0
+  StartupReloadedRetryFilesCount: 0
+RemovalPolicy:
+  FilesFromUnknownDomainCount: 0
+  NewRemovalPolicyCount: 0
+  OutdatedFilesCount: 0
+  RegisteredDomainCount: 0
+TransactionContainer:
+  CurrentMemSizeInBytes: 0
+  ErrorsCount: 0
+  TransactionsCount: 0
+  TransactionsDroppedCount: 0
+Transactions:
+  Cluster: 0
+  ClusterRole: 0
+  ClusterRoleBinding: 0
+  ConnectionEvents:
+    ConnectSuccess: 1
+    DNSSuccess: 1
+  CronJob: 0
+  DaemonSet: 0
+  Deployment: 0
+  Dropped: 0
+  DroppedByEndpoint: {}
+  Errors: 0
+  ErrorsByType:
+    ConnectionErrors: 0
+    DNSErrors: 0
+    SentRequestErrors: 0
+    TLSErrors: 0
+    WroteRequestErrors: 0
+  HTTPErrors: 0
+  HTTPErrorsByCode: {}
+  HighPriorityQueueFull: 0
+  InputBytesByEndpoint:
+    check_run_v1: 159795
+    intake: 16498
+    metadata_v1: 2493
+    series_v1: 3.6419677e+07
+  InputCountByEndpoint:
+    check_run_v1: 109
+    intake: 20
+    metadata_v1: 3
+    series_v1: 309
+  Job: 0
+  Node: 0
+  PersistentVolume: 0
+  PersistentVolumeClaim: 0
+  Pod: 0
+  ReplicaSet: 0
+  Requeued: 0
+  RequeuedByEndpoint: {}
+  Retried: 0
+  RetriedByEndpoint: {}
+  RetryQueueSize: 0
+  Role: 0
+  RoleBinding: 0
+  Service: 0
+  ServiceAccount: 0
+  StatefulSet: 0
+  Success: 441
+  SuccessByEndpoint:
+    check_run_v1: 109
+    connections: 0
+    container: 0
+    events_v2: 0
+    host_metadata_v2: 0
+    intake: 20
+    metadata_v1: 3
+    orchestrator: 0
+    process: 0
+    rtcontainer: 0
+    rtprocess: 0
+    series_v1: 309
+    series_v2: 0
+    services_checks_v2: 0
+    sketches_v1: 0
+    sketches_v2: 0
+    validate_v1: 0
+  SuccessBytesByEndpoint:
+    check_run_v1: 159795
+    intake: 16498
+    metadata_v1: 2493
+    series_v1: 3.6419677e+07

@@ -1,0 +1,214 @@
+2022-04-06 04:50:07 UTC | PROCESS | INFO | (pkg/util/log/log.go:572 in func1) | Features detected from environment: orchestratorexplorer,docker,kubernetes
+2022-04-06 04:50:07 UTC | PROCESS | INFO | (pkg/util/log/log.go:572 in func1) | no config exists at /etc/datadog-agent/system-probe.yaml, ignoring...
+2022-04-06 04:50:07 UTC | PROCESS | INFO | (pkg/util/log/log.go:572 in func1) | Collector docker successfully detected
+2022-04-06 04:50:07 UTC | PROCESS | INFO | (pkg/util/log/log.go:572 in func1) | Successful configuration found for Kubelet, using URL: https://192.168.49.2:10250
+2022-04-06 04:50:07 UTC | PROCESS | INFO | (pkg/util/log/log.go:572 in func1) | Collector kubelet successfully detected
+2022-04-06 04:50:07 UTC | PROCESS | INFO | (pkg/util/log/log.go:572 in func1) | Using collector kubelet
+2022-04-06 04:50:07 UTC | PROCESS | WARN | (pkg/util/log/log.go:592 in func1) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:50:07 UTC | PROCESS | INFO | (pkg/util/log/log.go:572 in func1) | overriding API key from env DD_API_KEY value
+2022-04-06 04:50:07 UTC | PROCESS | INFO | (pkg/util/log/log.go:572 in func1) | Using configured cluster_agent.auth_token
+2022-04-06 04:50:08 UTC | PROCESS | WARN | (pkg/process/config/config.go:345 in NewAgentConfig) | Failed to auto-detect a Kubernetes cluster name. Pod collection will not start. To fix this, set it manually via the cluster_name config option
+2022-04-06 04:50:08 UTC | PROCESS | INFO | (main_common.go:225 in runAgent) | running on platform: ubuntu
+2022-04-06 04:50:08 UTC | PROCESS | INFO | (main_common.go:226 in runAgent) | running version: Version: 7.34.0, Git hash: 7861858, Git branch: HEAD, Build date: 2022-02-28T19:13:56, Go Version: go version go1.16.12 linux/amd64, 
+2022-04-06 04:50:08 UTC | PROCESS | INFO | (pkg/workloadmeta/store.go:361 in startCandidates) | workloadmeta collector "kubelet" started successfully
+2022-04-06 04:50:08 UTC | PROCESS | INFO | (pkg/api/security/security.go:191 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2022-04-06 04:50:08 UTC | PROCESS | ERROR | (pkg/workloadmeta/collectors/kubemetadata/kubemetadata.go:72 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: unexpected status code from cluster agent: 403
+2022-04-06 04:50:08 UTC | PROCESS | INFO | (pkg/workloadmeta/store.go:364 in startCandidates) | workloadmeta collector "podman" could not start. error: component workloadmeta-podman is disabled: Podman not detected
+2022-04-06 04:50:08 UTC | PROCESS | INFO | (pkg/workloadmeta/store.go:364 in startCandidates) | workloadmeta collector "cloudfoundry" could not start. error: component workloadmeta-cloudfoundry is disabled: Agent is not running on CloudFoundry
+2022-04-06 04:50:08 UTC | PROCESS | INFO | (pkg/workloadmeta/store.go:364 in startCandidates) | workloadmeta collector "containerd" could not start. error: component workloadmeta-containerd is disabled: Agent is not running on containerd
+2022-04-06 04:50:08 UTC | PROCESS | INFO | (pkg/workloadmeta/store.go:361 in startCandidates) | workloadmeta collector "docker" started successfully
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (pkg/workloadmeta/store.go:364 in startCandidates) | workloadmeta collector "ecs_fargate" could not start. error: component workloadmeta-ecs_fargate is disabled: Agent is not running on Fargate
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (pkg/workloadmeta/store.go:182 in Start) | workloadmeta store initialized successfully
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (pkg/tagger/local/tagger.go:178 in tryCollectors) | workloadmeta tag collector successfully started
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (api/server.go:37 in StartServer) | API server listening on localhost:6162
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (pkg/process/checks/process.go:76 in Init) | no network ID detected: could not detect network ID
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (collector.go:239 in run) | Starting process-agent for host=minikube, endpoints=[https://process.datadoghq.com], orchestrator endpoints=[https://orchestrator.datadoghq.com], enabled checks=[process rtprocess]
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (pkg/forwarder/forwarder.go:225 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (pkg/forwarder/forwarder.go:225 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (pkg/forwarder/forwarder.go:225 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (pkg/forwarder/forwarder.go:328 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process.datadoghq.com" (1 api key(s))
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (pkg/forwarder/forwarder.go:328 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process.datadoghq.com" (1 api key(s))
+2022-04-06 04:50:09 UTC | PROCESS | INFO | (pkg/forwarder/forwarder.go:328 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://orchestrator.datadoghq.com" (1 api key(s))
+2022-04-06 04:50:11 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:50:11 UTC | PROCESS | INFO | (collector.go:173 in logCheckDuration) | Finished process check #1 in 25.2653ms
+2022-04-06 04:50:21 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:50:21 UTC | PROCESS | INFO | (pkg/api/security/security.go:191 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2022-04-06 04:50:21 UTC | PROCESS | INFO | (collector.go:173 in logCheckDuration) | Finished process check #2 in 290.6078ms
+2022-04-06 04:50:22 UTC | PROCESS | INFO | (pkg/forwarder/transaction/transaction.go:366 in internalProcess) | Successfully posted payload to "https://process.datadoghq.com/api/v1/collector", the agent will only log transaction success every 500 transactions
+2022-04-06 04:50:31 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:50:31 UTC | PROCESS | INFO | (pkg/api/security/security.go:191 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2022-04-06 04:50:31 UTC | PROCESS | INFO | (pkg/util/clusteragent/clusteragent.go:128 in init) | Successfully connected to the Datadog Cluster Agent 1.18.0+commit.78e3126
+2022-04-06 04:50:31 UTC | PROCESS | INFO | (collector.go:173 in logCheckDuration) | Finished process check #3 in 224.3417ms
+2022-04-06 04:50:38 UTC | PROCESS | INFO | (pkg/workloadmeta/store.go:361 in startCandidates) | workloadmeta collector "kube_metadata" started successfully
+2022-04-06 04:50:41 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:50:41 UTC | PROCESS | INFO | (collector.go:173 in logCheckDuration) | Finished process check #4 in 46.0905ms
+2022-04-06 04:50:51 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:50:51 UTC | PROCESS | INFO | (collector.go:175 in logCheckDuration) | Finished process check #5 in 42.7741ms. First 5 check runs finished, next runs will be logged every 20 runs.
+2022-04-06 04:51:01 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:51:11 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:51:21 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:51:31 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:51:41 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:51:51 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:52:01 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:52:11 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:52:21 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:52:31 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:52:41 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:52:51 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:53:03 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:53:13 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:53:23 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:53:23 UTC | PROCESS | INFO | (collector.go:177 in logCheckDuration) | Finish process check #20 in 99.9712ms
+2022-04-06 04:53:35 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:53:43 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:53:53 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:54:03 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:54:13 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:54:23 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:54:33 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:54:43 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:54:53 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:55:03 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:55:13 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:55:23 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:55:33 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:55:43 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:55:53 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:56:03 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:56:13 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:56:23 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:56:33 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:56:43 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:56:43 UTC | PROCESS | INFO | (collector.go:177 in logCheckDuration) | Finish process check #40 in 33.1876ms
+2022-04-06 04:56:53 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:57:03 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:57:13 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:57:23 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:57:33 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:57:43 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:57:53 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:58:03 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:58:13 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:58:23 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:58:33 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:58:43 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:58:53 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:59:03 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:59:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:59:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:59:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:59:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 04:59:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:00:03 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:00:03 UTC | PROCESS | INFO | (collector.go:177 in logCheckDuration) | Finish process check #60 in 228.4204ms
+2022-04-06 05:00:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:00:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:00:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:00:43 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:00:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:01:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:01:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:01:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:01:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:01:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:01:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:02:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:02:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:02:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:02:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:02:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:02:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:03:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:03:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:03:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:03:22 UTC | PROCESS | INFO | (collector.go:177 in logCheckDuration) | Finish process check #80 in 39.0969ms
+2022-04-06 05:03:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:03:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:03:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:04:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:04:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:04:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:04:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:04:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:04:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:05:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:05:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:05:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:05:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:05:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:05:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:06:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:06:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:06:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:06:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:06:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:06:42 UTC | PROCESS | INFO | (collector.go:177 in logCheckDuration) | Finish process check #100 in 29.2253ms
+2022-04-06 05:06:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:07:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:07:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:07:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:07:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:07:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:07:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:08:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:08:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:08:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:08:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:08:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:08:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:09:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:09:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:09:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:09:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:09:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:09:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:10:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:10:02 UTC | PROCESS | INFO | (collector.go:177 in logCheckDuration) | Finish process check #120 in 15.7825ms
+2022-04-06 05:10:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:10:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:10:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:10:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:10:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:11:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:11:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:11:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:11:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:11:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:11:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:12:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:12:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:12:22 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:12:32 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:12:42 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:12:52 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:13:02 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:13:12 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:13:21 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:13:21 UTC | PROCESS | INFO | (collector.go:177 in logCheckDuration) | Finish process check #140 in 23.6923ms
+2022-04-06 05:13:31 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:13:41 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:13:51 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:14:01 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:14:11 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:14:21 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:14:31 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:14:41 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:14:51 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:15:01 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:15:11 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:15:21 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:15:31 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:15:41 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:15:51 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:16:01 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:16:11 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:16:21 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:16:31 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:16:41 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:16:41 UTC | PROCESS | INFO | (collector.go:177 in logCheckDuration) | Finish process check #160 in 31.1071ms
+2022-04-06 05:16:51 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:17:01 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:17:11 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:17:21 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/
+2022-04-06 05:17:31 UTC | PROCESS | WARN | (pkg/util/containers/providers/cgroup/cgroup_detect.go:137 in parseCgroupMountPoints) | No mountPoints were detected, current cgroup root is: /host/sys/fs/cgroup/

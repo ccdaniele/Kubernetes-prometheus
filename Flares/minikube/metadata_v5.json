@@ -1,0 +1,271 @@
+{
+    "apiKey": "***************************506f1",
+    "agentVersion": "7.34.0",
+    "uuid": "14af4e79-0000-0000-82c6-5a08938b3765",
+    "internalHostname": "minikube",
+    "os": "linux",
+    "agent-flavor": "agent",
+    "python": "3.8.11 (default, Feb 28 2022, 19:12:35) [GCC 4.7.2]",
+    "systemStats": {
+        "cpuCores": 1,
+        "machine": "amd64",
+        "platform": "linux",
+        "pythonV": "3.8.11",
+        "processor": "Intel(R) Core(TM) i7-1068NG7 CPU @ 2.30GHz",
+        "macV": [
+            "",
+            "",
+            ""
+        ],
+        "nixV": [
+            "ubuntu",
+            "21.10",
+            ""
+        ],
+        "fbsdV": [
+            "",
+            "",
+            ""
+        ],
+        "winV": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "meta": {
+        "socket-hostname": "release-datadog-jsw4z",
+        "timezones": [
+            "UTC"
+        ],
+        "socket-fqdn": "release-datadog-jsw4z",
+        "ec2-hostname": "",
+        "hostname": "minikube",
+        "host_aliases": [
+            "minikube"
+        ],
+        "instance-id": ""
+    },
+    "host-tags": {
+        "system": [
+            "kube_node_role:control-plane",
+            "kube_node_role:master"
+        ]
+    },
+    "container-meta": {
+        "docker_swarm": "inactive",
+        "docker_version": "20.10.12",
+        "kubelet_version": "v1.23.3"
+    },
+    "network": null,
+    "logs": {
+        "transport": "HTTP"
+    },
+    "install-method": {
+        "tool": "helm",
+        "tool_version": "Helm",
+        "installer_version": "datadog-2.31.0"
+    },
+    "proxy-info": {
+        "no-proxy-nonexact-match": false,
+        "proxy-behavior-changed": false
+    },
+    "otlp": {
+        "enabled": false
+    },
+    "resources": {
+        "processes": {
+            "snaps": [
+                [
+                    1649222251,
+                    [
+                        [
+                            "root",
+                            0,
+                            15.847380441389674,
+                            1210593280,
+                            329973760,
+                            "kube-apiserver",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            10.85297699021735,
+                            4544028672,
+                            225980416,
+                            "agent",
+                            2
+                        ],
+                        [
+                            "nobody",
+                            0,
+                            5.370326291583145,
+                            2808950784,
+                            111820800,
+                            "prometheus",
+                            3
+                        ],
+                        [
+                            "root",
+                            0,
+                            4.25436068527724,
+                            11554988032,
+                            88584192,
+                            "etcd",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            3.376027099492672,
+                            21871542272,
+                            70295552,
+                            "containerd-shim-runc-v2",
+                            30
+                        ],
+                        [
+                            "root",
+                            0,
+                            3.221605629203559,
+                            2666446848,
+                            67080192,
+                            "kubelet",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            2.857682418968071,
+                            2551730176,
+                            59502592,
+                            "dockerd",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            2.676310959596655,
+                            846221312,
+                            55726080,
+                            "kube-controller-manager",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            2.5409708684388086,
+                            1580589056,
+                            52908032,
+                            "process-agent",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            2.1288524222532157,
+                            1490681856,
+                            44326912,
+                            "datadog-cluster-agent",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            1.3644169655099154,
+                            1605672960,
+                            28409856,
+                            "containerd",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            1.0376729372930802,
+                            769646592,
+                            21606400,
+                            "coredns",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.9723634746994683,
+                            772657152,
+                            20246528,
+                            "kube-scheduler",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.7725007819431139,
+                            1475899392,
+                            16084992,
+                            "trace-agent",
+                            1
+                        ],
+                        [
+                            "nobody",
+                            0,
+                            0.5332950394315716,
+                            751665152,
+                            11104256,
+                            "kube-state-metrics",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.5132300840564258,
+                            36143104,
+                            10686464,
+                            "systemd-journald",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.4992633013933341,
+                            766664704,
+                            10395648,
+                            "kube-proxy",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.4437896012385192,
+                            753909760,
+                            9240576,
+                            "storage-provisioner",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.2154031974096536,
+                            23130112,
+                            4485120,
+                            "systemd",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.04622808346234575,
+                            12476416,
+                            962560,
+                            "sshd",
+                            1
+                        ]
+                    ]
+                ]
+            ]
+        },
+        "meta": {
+            "host": "minikube"
+        }
+    },
+    "gohai": "{\"cpu\":{\"cache_size\":\"8192 KB\",\"cpu_cores\":\"4\",\"cpu_logical_processors\":\"4\",\"family\":\"6\",\"mhz\":\"2300.000\",\"model\":\"126\",\"model_name\":\"Intel(R) Core(TM) i7-1068NG7 CPU @ 2.30GHz\",\"stepping\":\"5\",\"vendor_id\":\"GenuineIntel\"},\"filesystem\":[{\"kb_size\":\"61255492\",\"mounted_on\":\"/\",\"name\":\"overlay\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/dev\",\"name\":\"tmpfs\"},{\"kb_size\":\"61255492\",\"mounted_on\":\"/tmp\",\"name\":\"/dev/vda1\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/dev/shm\",\"name\":\"shm\"},{\"kb_size\":\"1016696\",\"mounted_on\":\"/host/var/run\",\"name\":\"tmpfs\"},{\"kb_size\":\"5120\",\"mounted_on\":\"/host/var/run/lock\",\"name\":\"tmpfs\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/4dab4313eb8c6081b0fa12a58c6bba234a6c251cc55e4f751309785f1272cc88/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/6ddee4d792bba2b6bd13b3e16603a74a86d2eb39b695f37db77e66d73ff5d179/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/7ba31a12b2576b1e16948d2ddffdc89bb8be57741135c33aacdc790f14f6ba4b/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/0c22cb04a10f56cc6da5452f29ec71d9d93bbb8fbf6e168a2ac21811cdbe12ef/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/2afe74e5baa1bffa30884fd854efd1a635a595717d7eeea42933248ff9212bd4/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/8a07da82d1d9a2ccd61579f383c58b37143c81c6e51d17e41bae8044c0942723/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/3c2bb31b1202192409b94d9ef92a734eb502002accbe0974fb965965ea720a73/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/1f8c8a343bf450094919248061e7080239508221d282a55faa63c28cfefa6e82/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/13157e446bec6cde9e6ae4aaa02820ff44a4c858008821d9c0188899d6d3e248/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/4ce013145f11760098df5f8f9152ecea0703915b637971a537516be9cf4bb569/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/db30e2571e3aa9af8ba52eced6c8693cf4171480165317fa6564c2e9869f7f4b/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/2498861c9fdf2f0096afc4b1954edee5e9f84c113b67b64d3fe54fa4e1efe884/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"2033396\",\"mounted_on\":\"/var/run/secrets/kubernetes.io/serviceaccount\",\"name\":\"tmpfs\"},{\"kb_size\":\"1016696\",\"mounted_on\":\"/proc/acpi\",\"name\":\"tmpfs\"},{\"kb_size\":\"1016696\",\"mounted_on\":\"/sys/firmware\",\"name\":\"tmpfs\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/62e4a168f390bf2d972960263778dbc735a5b260a554e9cefef64c05c64b68c4/mounts/shm\",\"name\":\"shm\"}],\"memory\":{\"swap_total\":\"1048572kB\",\"total\":\"2033396kB\"},\"network\":null,\"platform\":{\"GOOARCH\":\"amd64\",\"GOOS\":\"linux\",\"goV\":\"1.16.12\",\"hardware_platform\":\"x86_64\",\"hostname\":\"release-datadog-jsw4z\",\"kernel_name\":\"Linux\",\"kernel_release\":\"5.10.76-linuxkit\",\"kernel_version\":\"#1 SMP Mon Nov 8 10:21:19 UTC 2021\",\"machine\":\"x86_64\",\"os\":\"GNU/Linux\",\"processor\":\"x86_64\",\"pythonV\":\"3.8.11\"}}"
+}

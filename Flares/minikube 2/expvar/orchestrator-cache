@@ -1,0 +1,17 @@
+Cluster: 0
+ClusterRole: 0
+ClusterRoleBinding: 0
+CronJob: 0
+DaemonSet: 0
+Deployment: 0
+Job: 0
+Node: 0
+PersistentVolume: 0
+PersistentVolumeClaim: 0
+Pod: 0
+ReplicaSet: 0
+Role: 0
+RoleBinding: 0
+Service: 0
+ServiceAccount: 0
+StatefulSet: 0

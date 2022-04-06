@@ -1,0 +1,60 @@
+ConfigureErrors:
+  etcd (2.9.3):
+  - |-
+    could not invoke 'etcd' python check constructor. New constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/etcd/etcd.py", line 87, in __init__
+        super(Etcd, self).__init__(
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+        raise CheckException(
+    datadog_checks.base.errors.CheckException: The agent could connect to none of the following URL: ['https://192.168.49.2:2379/metrics', 'http://192.168.49.2:2379/metrics'].
+    Deprecated constructor API returned:
+    __init__() got an unexpected keyword argument 'agentConfig'
+  kube_controller_manager (3.0.1):
+  - |-
+    could not invoke 'kube_controller_manager' python check constructor. New constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/kube_controller_manager/kube_controller_manager.py", line 108, in __init__
+        super(KubeControllerManagerCheck, self).__init__(
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+        raise CheckException(
+    datadog_checks.base.errors.CheckException: The agent could connect to none of the following URL: ['https://192.168.49.2:10257/metrics', 'https://localhost:10257/metrics', 'http://192.168.49.2:10252/metrics', 'http://localhost:10252/metrics'].
+    Deprecated constructor API returned:
+    __init__() got an unexpected keyword argument 'agentConfig'
+  kube_scheduler (3.0.2):
+  - |-
+    could not invoke 'kube_scheduler' python check constructor. New constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/kube_scheduler/kube_scheduler.py", line 113, in __init__
+        super(KubeSchedulerCheck, self).__init__(
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+        raise CheckException(
+    datadog_checks.base.errors.CheckException: The agent could connect to none of the following URL: ['https://192.168.49.2:10259/metrics', 'https://localhost:10259/metrics', 'http://192.168.49.2:10251/metrics', 'http://localhost:10251/metrics'].
+    Deprecated constructor API returned:
+    __init__() got an unexpected keyword argument 'agentConfig'
+  openmetrics (1.16.3):
+  - |-
+    could not invoke 'openmetrics' python check constructor. New constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 130, in __init__
+        self.get_scraper_config(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 159, in get_scraper_config
+        config = self.create_scraper_configuration(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/mixins.py", line 93, in create_scraper_configuration
+        raise CheckException("You have to define a namespace for each prometheus check")
+    datadog_checks.base.errors.CheckException: You have to define a namespace for each prometheus check
+    Deprecated constructor API returned:
+    __new__() got an unexpected keyword argument 'agentConfig'
+  - |-
+    could not invoke 'openmetrics' python check constructor. New constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 130, in __init__
+        self.get_scraper_config(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 159, in get_scraper_config
+        config = self.create_scraper_configuration(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/mixins.py", line 93, in create_scraper_configuration
+        raise CheckException("You have to define a namespace for each prometheus check")
+    datadog_checks.base.errors.CheckException: You have to define a namespace for each prometheus check
+    Deprecated constructor API returned:
+    __new__() got an unexpected keyword argument 'agentConfig'
+Py3Warnings: {}

@@ -1,0 +1,46 @@
+=== Running Alibaba Metadata availability diagnosis ===
+[INFO] infof: diagnosis error for Alibaba Metadata availability: %!w(*errors.errorString=&{Alibaba HostAliases: unable to query metadata endpoint: Get "http://100.100.100.200/latest/meta-data/instance-id": dial tcp 100.100.100.200:80: i/o timeout (Client.Timeout exceeded while awaiting headers)}) - 1649222247150105600
+===> FAIL
+=== Running Azure Metadata availability diagnosis ===
+[INFO] infof: diagnosis error for Azure Metadata availability: %!w(*errors.errorString=&{Azure HostAliases: unable to query metadata endpoint: Get "http://169.254.169.254/metadata/instance/compute/vmId?api-version=2017-04-02&format=text": dial tcp 169.254.169.254:80: i/o timeout (Client.Timeout exceeded while awaiting headers)}) - 1649222247452303900
+===> FAIL
+=== Running CRI availability diagnosis ===
+[INFO] infof: diagnosis error for CRI availability: %!w(*retry.Error=&{0xc001390ac0 0xc001390ac0 criutil 3}) - 1649222247452892200
+===> FAIL
+=== Running Cluster Agent availability diagnosis ===
+===> PASS
+=== Running Containerd availability diagnosis ===
+[INFO] info: No socket path was specified, defaulting to /var/run/containerd/containerd.sock - 1649222247453703900
+[ERROR] errorf: Containerd init error: temporary failure in containerdutil, will retry later: failed to dial "/var/run/containerd/containerd.sock": context deadline exceeded - 1649222248463603700
+[INFO] infof: diagnosis error for Containerd availability: %!w(*retry.Error=&{0xc00058e018 0xc00058e018 containerdutil 3}) - 1649222248463699100
+===> FAIL
+=== Running Docker availability diagnosis ===
+[INFO] info: successfully connected to docker - 1649222248464026400
+[INFO] infof: successfully got hostname "minikube" from docker - 1649222248506005200
+===> PASS
+=== Running EC2 Metadata availability diagnosis ===
+[INFO] infof: diagnosis error for EC2 Metadata availability: %!w(*url.Error=&{Get http://169.254.169.254/latest/meta-data/hostname 0xc003339170}) - 1649222248807007300
+===> FAIL
+=== Running ECS Fargate Metadata availability diagnosis ===
+[INFO] infof: diagnosis error for ECS Fargate Metadata availability: %!w(*fmt.wrapError=&{error while initializing ECS metadata V2 client: temporary failure in ecsutil-meta-v2, will retry later: Get "http://169.254.170.2/v2/metadata": context deadline exceeded (Client.Timeout exceeded while awaiting headers) 0xc002c141c0}) - 1649222249308735600
+===> FAIL
+=== Running ECS Metadata availability diagnosis ===
+[INFO] infof: diagnosis error for ECS Metadata availability: %!w(*retry.Error=&{0xc002112c40 0xc002112c40 ecsutil-meta-v1 3}) - 1649222250316516800
+===> FAIL
+=== Running ECS Metadata with tags availability diagnosis ===
+[INFO] infof: diagnosis error for ECS Metadata with tags availability: %!w(*retry.Error=&{0xc002112df0 0xc002112df0 ecsutil-meta-v3 3}) - 1649222250316658000
+===> FAIL
+=== Running GCE Metadata availability diagnosis ===
+[INFO] infof: diagnosis error for GCE Metadata availability: %!w(*errors.errorString=&{unable to retrieve hostname from GCE: GCE metadata API error: Get "http://169.254.169.254/computeMetadata/v1/instance/hostname": context deadline exceeded (Client.Timeout exceeded while awaiting headers)}) - 1649222251316976800
+===> FAIL
+=== Running Kubelet availability diagnosis ===
+===> PASS
+=== Running Kubernetes API Server availability diagnosis ===
+[INFO] infof: diagnosis error for Kubernetes API Server availability: %!w(*retry.Error=&{0xc002acbbe0 0xc002acbbe0 apiserver 3}) - 1649222251398238900
+===> FAIL
+=== Running OracleCloud Metadata availability diagnosis ===
+[INFO] infof: diagnosis error for OracleCloud Metadata availability: %!w(*errors.errorString=&{Oracle HostAliases: unable to query metadata endpoint: Get "http://169.254.169.254/opc/v2/instance/id": dial tcp 169.254.169.254:80: connect: connection refused}) - 1649222251401861800
+===> FAIL
+=== Running Tencent Metadata availability diagnosis ===
+[INFO] infof: diagnosis error for Tencent Metadata availability: %!w(*errors.errorString=&{unable to get TencentCloud CVM instanceID: cloud provider is disabled by configuration}) - 1649222251402577700
+===> FAIL
