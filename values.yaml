@@ -4,7 +4,7 @@ targetSystem: "linux"
 registry: gcr.io/datadoghq
 
 datadog:
-  apiKey: 7cfc47c0d5b34ac11f131eba6cd506f1
+  apiKey: 
   clusterName:  # danikluster
 
   # datadog.site -- The site of the Datadog intake to send Agent data to
