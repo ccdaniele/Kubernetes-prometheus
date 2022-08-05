@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redisdb-config-map
+  namespace: default
+data:
+  redisdb-config: |-
+    ad_identifiers:
+      - redis
+    init_config:
+    instances:
+      - host: "%%host%%"
+        port: "6379" 

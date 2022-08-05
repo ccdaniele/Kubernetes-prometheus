@@ -1,5 +1,0 @@
-ad_identifiers:
-  - couchbase
-init_config:
-instances:
-  - server: http://%%host%%:8091

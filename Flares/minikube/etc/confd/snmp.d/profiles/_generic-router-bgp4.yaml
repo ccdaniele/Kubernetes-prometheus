@@ -1,2 +1,0 @@
-extends:
-  - _generic-bgp4.yaml

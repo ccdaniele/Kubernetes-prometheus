@@ -1,6 +1,0 @@
-ad_identifiers:
-  - _kubelet
-init_config:
-instances:
-  -
-    min_collection_interval: 20
