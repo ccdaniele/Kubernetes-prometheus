@@ -8,6 +8,7 @@ authors = ["aldrick.castro <aldrick.castro@datadoghq.com>"]
 python = "^3.9"
 fastapi = "^0.79.0"
 uvicorn = "^0.18.2"
+python-dotenv = "^0.20.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

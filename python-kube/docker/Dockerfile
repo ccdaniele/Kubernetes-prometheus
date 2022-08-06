@@ -4,8 +4,8 @@ FROM python:3.9.7
 RUN adduser app
 
 WORKDIR /app
-COPY --chown=app requirements.txt requirements.txt
-COPY --chown=app pykube .
+COPY --chown=app ../pykube/requirements.txt requirements.txt
+COPY --chown=app ../pykube/pykube .
 
 USER app
 RUN pip install -r requirements.txt
