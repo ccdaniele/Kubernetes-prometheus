@@ -1,0 +1,13 @@
+# kubectl apply -f redis.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pykube
+  labels:
+    name: pykube
+spec:
+  containers:
+    - name: pykube
+      image: aldrickdev/pykube:0.1.3
+      ports:
+        - containerPort: 5050
