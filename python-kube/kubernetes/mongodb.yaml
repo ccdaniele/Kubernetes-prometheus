@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mongo
+  annotations:
+    ad.datadoghq.com/mongo.check_names: '["mongo"]'
+    ad.datadoghq.com/mongo.init_configs: '[{}]'
+    ad.datadoghq.com/mongo.instances: |
+      [
+        {
+          "hosts": ["%%host%%:%%port%%"], 
+          "username": "datadog", 
+          "password": "passwordd", 
+          "database": "local"
+        }
+      ]      
+spec:
+  containers:
+    - name: mongo
+      image: mongo
+      env:
+        - name: MONGO_INITDB_ROOT_USERNAME
+          value: "rootUser"
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          value: "rootPassword"
+        - name: MONGO_INITDB_DATABASE
+          value: "test"
+      ports:
+        - containerPort: 27017 
