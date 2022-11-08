@@ -1,9 +1,0 @@
-ad_identifiers:
-  - etcd
-init_config:
-instances:
-  - prometheus_url: https://%%host%%:2379/metrics
-    tls_ca_cert: /host/etcd/certs/ca.crt
-    tls_cert: /host/etcd/certs/healthcheck-client.crt
-    tls_private_key: /host/etcd/certs/healthcheck-client.key
-    ssl_verify: false

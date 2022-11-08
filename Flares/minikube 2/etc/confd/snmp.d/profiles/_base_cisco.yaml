@@ -1,3 +1,0 @@
-extends:
-  - _base.yaml
-  - _cisco-generic.yaml
